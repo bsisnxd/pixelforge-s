@@ -1,0 +1,109 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Space+Grotesk:wght@500;700&display=swap');
+  .pf-wrap { display: flex; flex-direction: column; align-items: center; gap: 3rem; padding: 3rem 0; }
+  .pf-label { font-family: 'DM Sans', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--color-text-tertiary); }
+  .pf-card { display: flex; align-items: center; justify-content: center; padding: 3rem 4rem; border: 0.5px solid var(--color-border-tertiary); }
+  .pf-card-dark { background: #0a0a0a; padding: 3rem 4rem; display: flex; align-items: center; justify-content: center; }
+  .pf-logo { display: flex; align-items: center; gap: 18px; }
+  .pf-icon { position: relative; width: 48px; height: 48px; flex-shrink: 0; }
+  .pf-wordmark { display: flex; flex-direction: column; gap: 1px; }
+  .pf-name { font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -0.5px; line-height: 1; color: #0a0a0a; }
+  .pf-name-light { color: #f0ece4; }
+  .pf-name span { color: #e85d26; }
+  .pf-sub { font-family: 'DM Sans', sans-serif; font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #888; font-weight: 400; margin-top: 3px; }
+  .pf-divider { width: 100%; height: 0.5px; background: var(--color-border-tertiary); }
+  .pf-icon-sm { width: 36px; height: 36px; }
+  .pf-inline { display: flex; align-items: center; gap: 10px; }
+  .pf-name-sm { font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: -0.3px; color: #0a0a0a; }
+  .pf-name-sm span { color: #e85d26; }
+</style>
+
+<div class="pf-wrap">
+
+  <div class="pf-label">Primary — light background</div>
+  <div class="pf-card">
+    <div class="pf-logo">
+      <svg class="pf-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="22" height="22" rx="3" fill="#0a0a0a"/>
+        <rect x="26" y="0" width="22" height="22" rx="3" fill="#0a0a0a"/>
+        <rect x="0" y="26" width="22" height="22" rx="3" fill="#0a0a0a"/>
+        <rect x="26" y="26" width="22" height="22" rx="3" fill="#e85d26"/>
+        <rect x="30" y="30" width="6" height="6" rx="1" fill="#fff"/>
+        <rect x="38" y="30" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="30" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="38" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.15"/>
+      </svg>
+      <div class="pf-wordmark">
+        <div class="pf-name">Pixel<span>Forge</span></div>
+        <div class="pf-sub">Web Development</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf-label">Primary — dark background</div>
+  <div class="pf-card-dark">
+    <div class="pf-logo">
+      <svg class="pf-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="22" height="22" rx="3" fill="#f0ece4"/>
+        <rect x="26" y="0" width="22" height="22" rx="3" fill="#f0ece4"/>
+        <rect x="0" y="26" width="22" height="22" rx="3" fill="#f0ece4"/>
+        <rect x="26" y="26" width="22" height="22" rx="3" fill="#e85d26"/>
+        <rect x="30" y="30" width="6" height="6" rx="1" fill="#fff"/>
+        <rect x="38" y="30" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="30" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="38" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.15"/>
+      </svg>
+      <div class="pf-wordmark">
+        <div class="pf-name pf-name-light">Pixel<span>Forge</span></div>
+        <div class="pf-sub">Web Development</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf-label">Icon mark only</div>
+  <div style="display: flex; gap: 2rem; align-items: center;">
+    <div class="pf-card" style="padding: 1.5rem;">
+      <svg style="width:56px;height:56px;" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="22" height="22" rx="3" fill="#0a0a0a"/>
+        <rect x="26" y="0" width="22" height="22" rx="3" fill="#0a0a0a"/>
+        <rect x="0" y="26" width="22" height="22" rx="3" fill="#0a0a0a"/>
+        <rect x="26" y="26" width="22" height="22" rx="3" fill="#e85d26"/>
+        <rect x="30" y="30" width="6" height="6" rx="1" fill="#fff"/>
+        <rect x="38" y="30" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="30" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="38" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.15"/>
+      </svg>
+    </div>
+    <div class="pf-card-dark" style="padding: 1.5rem;">
+      <svg style="width:56px;height:56px;" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="22" height="22" rx="3" fill="#f0ece4"/>
+        <rect x="26" y="0" width="22" height="22" rx="3" fill="#f0ece4"/>
+        <rect x="0" y="26" width="22" height="22" rx="3" fill="#f0ece4"/>
+        <rect x="26" y="26" width="22" height="22" rx="3" fill="#e85d26"/>
+        <rect x="30" y="30" width="6" height="6" rx="1" fill="#fff"/>
+        <rect x="38" y="30" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="30" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="38" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.15"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="pf-label">Small — navigation size</div>
+  <div class="pf-card" style="padding: 1rem 2rem;">
+    <div class="pf-inline">
+      <svg class="pf-icon-sm" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="22" height="22" rx="3" fill="#0a0a0a"/>
+        <rect x="26" y="0" width="22" height="22" rx="3" fill="#0a0a0a"/>
+        <rect x="0" y="26" width="22" height="22" rx="3" fill="#0a0a0a"/>
+        <rect x="26" y="26" width="22" height="22" rx="3" fill="#e85d26"/>
+        <rect x="30" y="30" width="6" height="6" rx="1" fill="#fff"/>
+        <rect x="38" y="30" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="30" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.4"/>
+        <rect x="38" y="38" width="6" height="6" rx="1" fill="#fff" opacity="0.15"/>
+      </svg>
+      <div class="pf-name-sm">Pixel<span>Forge</span></div>
+    </div>
+  </div>
+
+</div>
